@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "title": "HTML",
+      "description": "The standard markup language for creating web pages and structuring content on the web.",
+      "color": "#FF4C1E0D",
+      "image": "https://cdn.worldvectorlogo.com/logos/html-1.svg"
+    },
+    {
+      "id": 2,
+      "title": "CSS",
+      "description": "A style sheet language used to design and customize the look and layout of web pages.",
+      "color": "#004CE80D",
+      "image": "https://cdn.worldvectorlogo.com/logos/css-3.svg"
+    },
+    {
+      "id": 3,
+      "title": "JavaScript",
+      "description": "A powerful programming language that adds interactivity and dynamic behavior to websites.",
+      "color": "#FFDF000D",
+      "image": "https://cdn.worldvectorlogo.com/logos/logo-javascript.svg"
+    }
+  ]
+  

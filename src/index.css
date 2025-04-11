@@ -1,0 +1,17 @@
+.bg1{
+ background-image: url("https://i.ibb.co.com/DJ7sV0y/Hero-bg.png");
+ background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+height: 652px;
+}
+.bg2{
+    background-image: url("https://i.ibb.co.com/WWPFNxrb/handshake.jpg");
+ background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+height: 400px;
+}
+html {
+    scroll-behavior: smooth;
+  }

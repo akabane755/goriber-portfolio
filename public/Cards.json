@@ -1,0 +1,20 @@
+[
+    {
+      "id": 1,
+      "title": "I will Do Coding and Change The World",
+      "description": "Using the power of code to build impactful solutions that make a real difference.",
+      "image": "https://i.ibb.co.com/v6rmVjWc/colorful-illustration-female-programmer-working-23-2148277397.jpg"
+    },
+    {
+      "id": 2,
+      "title": "I will help People by creating Modern Web System",
+      "description": "Building responsive, user-friendly web applications to solve real-world problems.",
+      "image": "https://i.ibb.co.com/5hVFtvp7/programming-773186-774.jpg"
+    },
+    {
+      "id": 3,
+      "title": "I will Do Coding and Change The World",
+      "description": "Passionate about leveraging code for social impact and innovation.",
+      "image": "https://i.ibb.co.com/v6rmVjWc/colorful-illustration-female-programmer-working-23-2148277397.jpg"
+    }
+  ]

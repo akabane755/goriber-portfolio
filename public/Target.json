@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "ReactJS",
+    "description": "ReactJS is a powerful JavaScript library developed by Facebook for building fast, dynamic, and responsive user interfaces. It uses a component-based architecture, making it easy to reuse code and manage complex UIs. With its virtual DOM and strong developer community, React is one of the most popular tools for front-end development today.",
+    "image": "https://cdn.worldvectorlogo.com/logos/react-2.svg"
+  },
+  {
+    "id": 2,
+    "title": "NextJS",
+    "description": "Next.js is a React-based framework that enables server-side rendering, static site generation, and full-stack capabilities. It comes with built-in routing, image optimization, API routes, and more. Ideal for creating high-performance and SEO-friendly web applications, Next.js is perfect for developers who want to take their React skills to the next level.",
+    "image": "https://cdn.worldvectorlogo.com/logos/nextjs-2.svg"
+  },
+  {
+    "id": 3,
+    "title": "MongoDB",
+    "description": "MongoDB is a flexible, scalable, NoSQL database that stores data in a JSON-like format called BSON. It’s ideal for modern applications that require high performance, real-time analytics, and quick development cycles. As part of the MERN stack, MongoDB pairs perfectly with Node.js and Express to power the backend of full-stack web apps.",
+    "image": "https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg"
+  }
+]
