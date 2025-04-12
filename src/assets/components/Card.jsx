@@ -3,7 +3,7 @@ import React from 'react';
 const Card = ({data}) => {
     console.log(data.id);
     return (
-        <div class=" bg-base-100 shadow-sm mb-8 flex justify-around">
+        <div class=" bg-base-100 shadow-sm mb-8 flex flex-col lg:flex-row justify-around">
         <div class={` flex flex-col justify-center items-center space-y-4  ${data.id&1?"hidden":""}`}>
     <h2 class="card-title text-3xl text-[#0D1321B3]">{data.title}</h2>
     <p className='text-xl text-[#0D1321]'>{data.description}</p>

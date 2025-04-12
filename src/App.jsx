@@ -9,10 +9,13 @@ import { BsFacebook } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
+
 function App() {
   const [arr,setArr]=useState([]);
   const [Targetarr,setTargetarr]=useState([]);
   const [ctargetarr,setCtargetarr]=useState([]);
+ 
    useEffect(()=>{
         fetch("Cards.json").then(res=>res.json()).then(data=>setArr(data));
         fetch("Target.json").then(res=>res.json()).then(data=>setTargetarr(data));
@@ -28,16 +31,14 @@ function App() {
       <html lang='en' data-theme="light"></html>
       <div class="navbar bg-base-100 shadow-sm">
   <div class="navbar-start">
-    <div class="dropdown">
-      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
-      </div>
-      </div>
+    
     <a class="btn btn-ghost text-2xl font-bold ">Lamiya.RK</a>
   </div>
-  <div class="navbar-end">
-    <a class="btn bg-white border-black">Download Resume</a>
-  </div>
+  <div className="navbar-end">
+  <a className="btn bg-white border-black" href='/resume.pdf' download>Download Resume</a>
+
+  
+</div>
 </div>
 <div
   class="hero  bg1 ">
@@ -53,10 +54,10 @@ function App() {
     </div>
   </div>
 </div>
-<div className='bg-[#0D132105] '>
-<div className='text-center w-[90%] mx-auto p-[97px] bg-white'>
+<div className='bg-[#0D132105] border-[#0D132105] border-2'>
+<div className=' text-center w-[90%] mx-auto p-5 lg:p-[97px] bg-white border-2 border-white my-[100px] rounded-2xl'>
   <h1 className='text-4xl font-bold'>Why Web Development??</h1>
-  <p className='text-xl text-gray-600 w-[70%] mx-auto my-6' >Web development lets me blend creativity with logic. I love turning ideas into interactive experiences, and the fast-paced evolution of web technologies keeps me constantly learning and growing.</p>
+  <p className='text-xl text-gray-600 w-[90%] lg:w-[70%] mx-auto my-6' >Web development lets me blend creativity with logic. I love turning ideas into interactive experiences, and the fast-paced evolution of web technologies keeps me constantly learning and growing.</p>
   <div >
     {
       arr.map(data=><Card data={data}></Card>)
@@ -74,7 +75,7 @@ function App() {
 <div>
 <h1 className='text-4xl font-bold text-center mt-[150px] '>My Current Target</h1>
 <p  className='text-center  mx-auto bg-white my-5 text-gray-600 text-xl '> I'm currently focused on building a strong foundation in HTML, CSS, and JavaScript — the core technologies of web development.</p>
-<div className='w-[90%] mx-auto gap-10 flex' >
+<div className='w-[90%] mx-auto gap-10 flex flex-col lg:flex-row' >
     {
       ctargetarr.map(data=><Ctarget data={data} notify={notify}></Ctarget>)
     }
@@ -99,15 +100,15 @@ function App() {
       m still learning and growing in my journey as a developer. Sometimes things get challenging, and that's okay — I'm not afraid to ask for help. Whether it's guidance, feedback, or just a little encouragement, your support means a lot and keeps me moving forward. 
       </p>
       <input type="text" placeholder="Suggest me any feedback for me" class="input text-gray-600"/>
-      <button class="btn bg-white mx-4">Get Started</button>
+      <button class="btn bg-white mx-4 ">Get Started</button>
     </div>
   </div>
 </div>
-<footer className='flex justify-between text-2xl font-bold p-3 bg-gray-50 mt-[100px] ' id="contact">
+<footer className='flex flex-col lg:flex-row justify-between text-2xl font-bold p-3 bg-gray-50 mt-[100px] ' id="contact">
 <p>An Open Commitment by Lamiya Rahman Khan</p>
-<div className='flex gap-3'>
-<FaGithub />
-<BsFacebook color='blue' />
+<div className='flex gap-3 justify-center '>
+<a href='https://github.com/akabane755' target='_blank'><FaGithub /></a>
+<a href='https://www.facebook.com/lamiya.khan.9887117/' target='_blank'><BsFacebook color='blue'/></a>
 <FaLinkedin color='#2489BE'/>
 
 </div>
